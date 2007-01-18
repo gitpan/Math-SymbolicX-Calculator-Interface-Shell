@@ -10,12 +10,14 @@ WriteMakefile
                          ],
           'VERSION_FROM' => 'lib/Math/SymbolicX/Calculator/Interface/Shell.pm',
           'PREREQ_PM' => {
+                           'Getopt::Long' => '0',
+                           'Math::Symbolic' => '0.501',
+                           'Pod::Usage' => '0',
+                           'Parse::RecDescent' => '0',
                            'Test::More' => 0,
                            'Term::ReadLine' => '1.02',
                            'Params::Util' => '0',
-                           'Math::Symbolic' => '0.501',
-                           'Math::SymbolicX::Calculator::Interface' => '0.01',
-                           'Parse::RecDescent' => '0'
+                           'Math::SymbolicX::Calculator::Interface' => '0.01'
                          }
         )
 ;
